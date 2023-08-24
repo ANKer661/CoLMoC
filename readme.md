@@ -38,7 +38,7 @@
 
 Projector是一个被实验认为有效的trick, 其作用是将u映射到较高的维度proj_hidden_dim, 再逐步压缩到较低的维度proj_output_dim, 例如, 64 → 128 → 32 → 8, Projector具体结构可参考 `modeling_grad.py`中478行内容
 
-![总体架构](figs\encoder_arch.png "总体架构")
+![总体架构](figs/encoder_arch.png "总体架构")
 上图是图神经网络总体结构的示意图。小黑点表示发生了信息的汇聚并进行了信息的更新，虚线表示信息的来源，从左至右代表了汇聚及更新的顺序，即E→N→u的顺序。具体每个更新步骤中发生了什么可以参考论文及`modeling_grad.py`中246, 289, 341行开始的内容。
 
 ### SwAV方法
