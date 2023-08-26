@@ -10,6 +10,28 @@ This is my ***graduation project***. The main files in this project are:
 
 3. `run.py`: Build dataset, train model and save model parameters.
 
+## Abstract
+Molecular dynamics (MD) simulation has been widely used to study proteins’
+thermodynamic and dynamic behavior. However, MD trajectories typically contain a massive 
+amount of protein conformations, which is highly challenging to extract critical information
+related to biophysical processes, such as the free energy landscape and critical stable structures, 
+from this massive data. This study uses graph neural networks and contrastive learning methods 
+to overcome the challenges of analyzing proteins’ MD trajectories. Based on the characteristic 
+of many unlabeled data in MD trajectories, we designed and trained a graph neural network 
+model using the unsupervised contrastive learning method SwAV. The model can take the 
+Cartesian coordinates of the constituent atoms of proteins as inputs, reduce the dimensionality 
+of protein conformation information to any dimension, and perform end-to-end clustering 
+analysis. To validate the effectiveness of our method, we conducted a series of studies using the 
+MD trajectory of alanine dipeptide. The results showed that our approach could learn physically 
+meaningful representations of protein conformations without prior domain knowledge of 
+protein conformation domains. Finally, we provided an example of using our method to analyze 
+the potential high-energy conformations of Mini-G proteins. This study preliminarily indicates 
+that graph neural networks and contrastive learning methods have potential application value 
+in the analysis of MD trajectories.
+
+**Key Words: protein conformation; clustering analysis; graph nerual network; contrastive 
+learning**
+
 ## `preprocess.ipynb`
 Required Python packages: `torch`, `tokenizers`, `numpy`, `matplotlib`
 
