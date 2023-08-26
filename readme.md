@@ -1,3 +1,5 @@
+***Note: If you are interested in this project, you can refer to the readme-en.md file which is provided as a translation by Claude.***
+
 # 基于对比学习的蛋白质聚类分析
 我的毕设。本项目主要包括三个文件  
 1. `preprocess.ipynb`: 用于预处理数据，将数据转化为我们需要的形式。
